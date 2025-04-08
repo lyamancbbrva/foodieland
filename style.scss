@@ -26,7 +26,274 @@ header {
 		cursor: pointer;
 	}
 }
+#category-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px $mobile-container;
+	h3 {
+		font-size: 24px;
+	}
+	button {
+		background-color: #e7fafe;
+		border-radius: 16px;
+		padding: 13px;
+		border: 0;
+		font-weight: 600;
+	}
+}
+#category-cards {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 $mobile-container;
+}
+#category-cards .card {
+	border-radius: 30px;
+	margin-top: 50px;
+	width: calc(50% - 5px);
+	position: relative;
+	padding-top: 40px;
+	border: 0 !important;
+	.card-img{
+		img{
+			position: absolute;
+			bottom: 80px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100px;
+		}
+	}
+	.card-name{
+		padding: 30px;
+		text-align: center;
+	}
+	border: 0;
+}
+#black-card {
+	background: linear-gradient(
+		180deg,
+		rgba(112, 130, 70, 0) 0%,
+		rgba(112, 130, 70, 0.1) 100%
+	);
+}
+#green-card {
+	background: linear-gradient(
+		180deg,
+		rgba(108, 198, 63, 0) 0%,
+		rgba(108, 198, 63, 0.1) 100%
+	);
+}
+#red-card {
+	background: linear-gradient(
+		180deg,
+		rgba(204, 38, 27, 0) 0%,
+		rgba(204, 38, 27, 0.1) 100%
+	);
+}
+#yellow-card {
+	background: linear-gradient(
+		180deg,
+		rgba(240, 158, 0, 0) 0%,
+		rgba(240, 158, 0, 0.1) 100%
+	);
+}
+#gray-card {
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.05) 100%
+	);
+}
+#gray2-card {
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.05) 100%
+	);
+}
+.opacity-20 {
+	left: 52% !important;
+	bottom: 60px !important;
+	opacity: 6%;
+}
+#recipes-header {
+	h3{
+		font-size: 48px;
+		font-weight: 600;
+		letter-spacing: -4%;
+		padding: 30px 0;
+	}
+	padding: 40px 0;
+	text-align: center;
+	p{
+		color: #0000006e;
+		line-height: 28px;
+		padding: 20px 0;
+	}
+}
+#recipe-cards{
+	display: flex;
+	margin-bottom: 45px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	 .card {
+	background: linear-gradient(
+		180deg,
+		rgba(231, 249, 253, 0) 0%,
+		$light-blue 100%
+	);
+	width: calc(100% - $mobile-container);
+	padding: 20px;
+	border-radius: 30px;
+	border: 0;
+	margin: 10px 0;
+	.card-img{
+		height: 250px;
+		border-radius: 30px;
+		overflow: hidden;
+		position: relative;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.card-heart{
+			border-radius: 50px;
+			background-color: #fff;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			i{
+				color: #FF6363;
+				font-size: 20px;
+			}
+		}
+	}
+	.card-content{
+		h5{
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 32px;
+			padding: 24px 0;
+		}
+	}
+	.card-details{
+		display: flex;
+		gap: 24px;
+	}
+}
+.add{
+	.add-img{
+		width: calc(100% - $mobile-container);
+		margin: 10px auto;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+}
+#delicious{
+	background-color: $light-blue;
+	margin: 45px 0;
+	border-radius: 60px;
+	#delicious-header{
+		text-align: center;
+		padding: 40px 0;
+		h3{
+			font-size: 48px;
+			font-weight: 600;
+			letter-spacing: -4%;
+			padding-top: 40px;
+		}
+		p{
+			width: 50%;
+			margin: auto;
+			color: #0000006e;
+			line-height: 28px;
+			padding-top: 24px;
+		}
+	}
+	#delicious-content{
+		margin: auto;
+		width: 90%;
+		input{
+			border-radius: 24px;
+			padding: 15px 20px;
+			width: 100%;		
+			flex: none;
+			position: relative;
+		}
+		button{
+			background-color: #000;
+			font-size: 14px;
+			color: #fff;
+			border-radius: 16px;
+			padding: 10px 20px;
+			border: 0;
+			font-weight: 600;
+			margin-top: 10px;
+			position: absolute;
+			right: 10px;
+			bottom: 50%;
+			transform: translateY(50%);
+			// margin-left: -160px;
+		}
+	}
+	overflow: hidden;
+	position: relative;
+	.imgs{
+		height: 300px;
+		.delicious-img{
+			position: absolute;
+			bottom: 0;
+		}
+		.right{
+			right: 0;
+		}
+		.left{
+			left: 0;
+		}
+	}
+	
+}
 
+
+@media only screen and (min-width: 600px){
+	#category-cards .card {
+		width: calc(33.33% - 15px);
+	}
+	#category-header {
+		h3 {
+			font-size: 36px;
+		}
+		button {
+			padding: 15px;
+		}
+	}
+	#recipe-cards{
+		gap: 15px;
+		.card{
+			width: calc(50% - 15px);
+
+		}
+	}
+	.imgs{
+		height: 100px;
+		.delicious-img{
+			width: 35% !important;
+		}
+	}
+}
 
 @media only screen and (min-width: 768px) {
 	.wrapper {
@@ -60,5 +327,69 @@ header {
 			}
 		}
 	}
+	#category-header {
+		padding: 40px 0;
 
+		h3 {
+			font-size: 48px;
+		}
+		button {
+			padding: 20px;
+		}
+	}
+	#category-cards{
+		padding-top: 40px;
+		justify-content: start;
+		gap: 15px;
+		.card {
+			width: calc(25% - 15px);
+		}
+	}
+	#recipe-cards{
+		.add{
+			width: calc(50% - 15px);
+		}
+	}
+
+
+}
+@media only screen and (min-width: 1024px) {
+	.wrapper {
+		padding: 0 80px;
+		margin: 0 auto;
+	}
+	#category-cards{
+		gap: 40px;
+		.card{
+			width: 180px;
+		}
+	}
+	#recipe-cards{
+		padding-bottom: 40px;
+		.card, .add{
+			width: calc(33.33% - 40px);
+			min-height: 434px;
+		}
+	}
+	#delicious{
+		#delicious-content{
+			width: 40%;
+			input{
+				padding: 30px;
+			}
+			button{
+				padding: 20px 40px;
+			}
+		}
+		.imgs{
+			height: 100px;
+		}
+		.delicious-img{
+			width: 25% !important
+		}
+			.left{
+				bottom: -100px !important;
+			}
+		
+	}
 }
